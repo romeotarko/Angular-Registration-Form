@@ -12,4 +12,8 @@ export class RegistrationService {
   public loginUserFromRemote(user :User):Observable<any>{
     return this.http.post("http://localhost:8080/register/login",user)
   }
+
+   public registerUserFromRemote(user :User):Observable<any>{
+    return this.http.post("http://localhost:8080/register/user",user)
+  }
 }
